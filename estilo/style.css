@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap');
+
+:root {
+    --font-main: 'Montserrat', sans-serif;
+}
+
 body {
     background-color: #010326da;
+    font-family: var(--font-main);
 }
 
 header {
@@ -15,10 +22,17 @@ header {
     text-align: center;
     margin-bottom: 10px;
     background-image: linear-gradient(to bottom, #F23A29, #A62626);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.392);
 }
 
 header h1 {
     margin-bottom: 10px;
+    color: #f2f2f2;
+    font-size: 3rem;
+}
+
+span {
+    color: rgb(10, 10, 74);
 }
 
 nav {
@@ -27,6 +41,17 @@ nav {
 
 nav a {
     padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   /* text-transform: uppercase; */
+    font-style: italic;
+    transition: 0.5s;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    text-decoration: underline rgb(8, 8, 69);
 }
 
 main {
@@ -36,6 +61,8 @@ main {
     margin: auto;
     margin-bottom: 50px;
     background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.282);
 }
 
 article {
@@ -56,6 +83,7 @@ article p {
     margin: 10px;
     line-height: 1.5em;
     text-align: justify;
+    font-size: 18px;
 }
 
 article > section {
@@ -76,6 +104,20 @@ section img {
 
 footer {
     min-width: 150px;
-    border: 1px solid black;
+    
     text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.464);
+    color: #f2f2f2;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
