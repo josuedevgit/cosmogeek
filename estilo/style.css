@@ -139,3 +139,44 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.news {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.659);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.329);
+    
+}
+
+.img-news {
+    width: 900px;
+}
+
+.img-news img {
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.go-to {
+    text-decoration: none;
+    color: var(--cor02);
+    width: 90px;
+    padding: 8px;
+}
+
+.go-to:hover {
+    border: 2px solid var(--cor02);
+    color: var(--cor02);
+    text-decoration: underline;
+}
+
+.news-title a {
+    text-decoration: none;
+    color: var(--cor02)
+}
