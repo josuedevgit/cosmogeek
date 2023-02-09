@@ -1,18 +1,26 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap');
-
 :root {
     --font-main: 'Montserrat', sans-serif;
+
+    --cor01: #F2F2F2;
+    --cor02: #A62626;
+    --cor03: #F23A29;
+    --cor04: #F24C27;
+    --cor05: #010326;
 }
 
 body {
     background-color: #010326da;
-    font-family: var(--font-main);
+    font-family: var(--font-main)
 }
 
 header {
@@ -29,10 +37,11 @@ header h1 {
     margin-bottom: 10px;
     color: #f2f2f2;
     font-size: 3rem;
+    font-weight: 800;
 }
 
 span {
-    color: rgb(10, 10, 74);
+    color: var(--cor05);
 }
 
 nav {
@@ -43,15 +52,16 @@ nav a {
     padding: 8px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 400;
    /* text-transform: uppercase; */
     font-style: italic;
     transition: 0.5s;
     font-size: 1.5em;
+    font-weight: 700;
 }
 
 nav a:hover {
-    text-decoration: underline rgb(8, 8, 69);
+    text-decoration: underline var( --cor05);
 }
 
 main {
@@ -72,7 +82,7 @@ article {
 }
 
 article hr {
-    border: 1px solid rgba(0, 0, 0, 0.475);
+    border: 1px solid rgba(9, 9, 9, 0.838);
 }
 
 article img  {
@@ -84,6 +94,11 @@ article p {
     line-height: 1.5em;
     text-align: justify;
     font-size: 18px;
+    font-weight: 400;
+}
+
+article strong {
+    color: var(--cor02);
 }
 
 article > section {
@@ -95,11 +110,13 @@ article > section {
 
 article h1 {
     font-size: 2em;
-    text-align: center;
+    text-align: left;
+    color: var(--cor02);
+    
 }
 
 section img {
-    border: 1px solid rgba(0, 0, 0, 0.407);
+    border: 1.5px solid var(--cor05);
 }
 
 footer {
@@ -110,11 +127,12 @@ footer {
     font-size: 1.2em;
     background-color: rgba(0, 0, 0, 0.464);
     color: #f2f2f2;
+    font-weight: 300;
 }
 
 footer a {
-    color: white;
-    font-weight: bolder;
+    color: var(--cor03);
+    font-weight: 600;
     text-decoration: none;
 }
 
