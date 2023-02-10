@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: #010326da;
+    background-color: var(--cor05);
     font-family: var(--content-font);
 }
 
@@ -34,7 +34,11 @@ header {
     margin-bottom: 10px;
     background-image: linear-gradient(to bottom, #F23A29, #A62626);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.392);
-    font-family: var(--font-main)
+    font-family: var(--font-main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 header {
@@ -106,11 +110,11 @@ main {
     max-width: 1150px;
     min-width: 200px;
     margin: auto;
+    margin-top: 180px;
     margin-bottom: 50px;
     background-color: white;
     border-radius: 0 0 4px 4px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.282);
-    height: 100vh;
     
 }
 
@@ -130,7 +134,7 @@ article hr {
 }
 
 article img  {
-    width: 750px;
+    width: 90%;
     
     display: block;
     margin: auto;
