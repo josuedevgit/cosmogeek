@@ -122,6 +122,17 @@ main {
     animation: texto .5s .2s backwards;
 }
 
+#destaque {
+    padding: 20px;
+    
+}
+
+#principal {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
+}
+
 article {
     margin: auto;
     max-width: 800px;
