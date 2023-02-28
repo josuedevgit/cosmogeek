@@ -193,6 +193,16 @@ footer {
     font-family: var(--font-main)
 }
 
+.read-more {
+    color: var(--cor02);
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: var(--cor05);
+    text-decoration: underline;
+}
+
 footer a {
     color: var(--cor03);
     font-weight: 600;
