@@ -304,3 +304,48 @@ footer a:hover {
         
     }
 }
+
+/* Formulário de envio */
+
+#contato {
+    color: var(--cor02);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--cor02);
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--cor05);
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: var(--cor05);
+    color: var(--cor01);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
