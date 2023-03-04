@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoGeek</title>
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+    <header>
+        <h1>Cosmo<span>Geek</span></h1>
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="../critics.html">Críticas</a>
+          <a href="./contact.html">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+      <section id="contact-page">
+        <section id="talk-me">
+          <h1>Fale comigo!</h1>
+          <p>Olá! Muito prazer! Me chamo <strong>Josué</strong> e você está no meu blog de <strong>cultura pop</strong>. Criei essa página com o intuito de praticar meus conhecimentos em programação e desenvolvimento web. E minha intenção aqui é falar sobre aquilo que gosto e também como um exercício de colaboração e de interação. Por isso, esse projeto é <strong>público</strong>. Então se você quer conversar comigo sobre o que você leu aqui, ou quer me ajudar no projeto, você pode entrar em contato comigo pelo <strong>formulário</strong> abaixo! Certo? Valeu! ✌ </p>
+        </section>
+        <h1 id="contato">Entre em contato com o desenvolvedor</h1>
+        <form action="https://formsubmit.co/josueluzsilva.01@gmail.com" method="POST" class="contato-form">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contact-page/thanks.html">
+          <input type="hidden" name="_autoresponse" value="Obrigado pelo contato! Você enviou:">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 CosmoGeek</p>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/josuedevgit" target="_blank">Josué Silva</a
+        >.
+      </p>
+    </footer>
+</body>
+</html>
